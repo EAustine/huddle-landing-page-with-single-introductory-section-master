@@ -1,0 +1,205 @@
+@font-face {
+    font-family: PoppinsRegular;
+    src: url(poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: PoppinsLight;
+    src: url(poppins/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: PoppinsBold;
+    src: url(poppins/Poppins-Bold.ttf.ttf);
+}
+
+@font-face {
+    font-family: PoppinsLight;
+    src: url(poppins/Poppins-ExtraBold.ttf.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(257, 40%, 49%);
+    font-family: PoppinsRegular;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    background: url("images/bg-mobile.svg");
+    background-size: cover;
+    padding: 30px;
+}
+
+nav {
+    width: 100%;
+}
+
+nav img {
+    width: 30%;
+    height: 30%;
+}
+section {
+    width: 100%;
+    margin: 30px 0;
+}
+
+section img{
+    width: 100%;
+    height: 100%;
+}
+
+section div.text_button {
+    width: 100%;
+    margin: 50px 0;
+    display: grid;
+    place-items: center;
+}
+
+section h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+section h3 {
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    margin: 20px auto;
+}
+
+section button {
+    padding: 15px 30px;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: 5px 5px 10px -3px rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 30px;
+    width: 50%;
+}
+
+section button:hover {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+main div.social_media_icon {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main div.social_media_icon a {
+    text-decoration: none;
+}
+
+main div.social_media_icon a i {
+    font-size: 16px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+main div.social_media_icon a i:hover {
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    box-shadow: 5px 5px 15px -3px rgba(0,0,0,0.5);
+    transition: 0.5s ease-in-out ;
+}
+
+footer {
+    width: 100%;
+    font-size: 1em;
+    background-color: violet;
+}
+
+footer p a {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 900px){
+    main {
+        background: url("images/bg-desktop.svg");
+        background-size: cover;
+        padding: 50px;
+        height: 100vh;
+    }
+
+    nav img {
+        width: 15%;
+        height: 15%;
+    }
+
+    section {
+        width: 100%;
+        margin: 30px 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    section img{
+        width: 100%;
+        height: 100%;
+    }
+
+    section div.text_button {
+        width: 100%;
+        margin: 50px 0px;
+        display: grid;
+        place-items: start;
+    }
+
+    section h1 {
+        font-size: 2.5em;
+        font-weight: 700;
+        text-align: start;
+        width: 80%;
+    }
+    
+    section h3 {
+        font-size: 1em;
+        font-weight: 400;
+        text-align: start;
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    section button {
+        padding: 15px 0;
+        background-color: white;
+        color: hsl(257, 40%, 49%);
+        box-shadow: 5px 5px 10px -3px rgba(0,0,0,0.5);
+        border: none;
+        border-radius: 30px;
+        width: 25%;
+        margin: 0 10%;
+    }
+
+    main div.social_media_icon {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
